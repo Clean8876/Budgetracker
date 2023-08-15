@@ -7,7 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+    <header>
+  <h1>Doit</h1></header>
+  <div class="container">
+  <div class="trans-container">
+    <label for="description">Description:</label>
+    <input type="text" id="description" placeholder="Enter the transtion you made">
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" placeholder="Enter the amount">
+    <select name="trans-type" id="trans-type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+    <button id="addtrans">Add Transation</button>
+  </div>
+
+  <div class="showtrans">
+    <h2>Transactions</h2>
+    <ul id="transactions"></ul>
+  </div>
+  <div class="insight">
+    <h2>Spending Review</h2>
+    <p>Total income: <span id="total-income">0RS</span></p>
+    <p>Total expense: <span id="total-expense">0RS</span></p>
+    <p>Total net: <span id="total-net">0RS</span></p>
+  </div></div>
 <script src="script.js"></script>
 </body>
 </html>
